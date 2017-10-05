@@ -3,8 +3,14 @@
   "version": "0.0.6",
   "description": "pdfmake iframe wrapper for react on node and express",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "pdfmake": "^0.1.33"
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-plugin-import": "^2.7.0"
+  },
   "engines": {
     "node": ">=0.10.0"
   },

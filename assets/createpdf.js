@@ -1,24 +1,23 @@
-var createpdf = (function () {
+const createpdf = (function () {
 
-  var definition = null
-  var name = null
-  var pdf = null
+  let definition = null;
+  let name = null;
+  let pdf = null;
 
   return {
-    initialize: function(_definition, _name) {
+    initialize(_definition, _name) {
       definition = JSON.parse(_definition);
       name = _name;
       pdf = pdfMake.createPdf(definition);
     },
-    print: function() {
+    print() {
       pdf.print()
     },
-    open: function() {
+    open() {
       pdf.open()
     },
-    save: function() {
+    save() {
       pdf.download(name + '.pdf')
     }
   }
-
-})();
+}());
